@@ -53,7 +53,27 @@ public class Main {
 
         passed += checkRuntimeSwitch();
 
-        System.out.println("SUMMARY: " + passed + "/5 PASS");
+        Circle circleAscii =
+                new Circle("C3", 2, new AsciiRenderer());
+
+        passed += check(
+                "T6",
+                "Circle + AsciiRenderer",
+                circleAscii.execute(),
+                "ASCII circle radius=2"
+        );
+
+        Square squareAscii =
+                new Square("S3", 3, new AsciiRenderer());
+
+        passed += check(
+                "T7",
+                "Square + AsciiRenderer",
+                squareAscii.execute(),
+                "ASCII square side=3"
+        );
+
+        System.out.println("SUMMARY: " + passed + "/7 PASS");
     }
 
     private static int checkRuntimeSwitch() {
