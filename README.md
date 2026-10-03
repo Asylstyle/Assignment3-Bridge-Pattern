@@ -1,7 +1,7 @@
 # Assignment 3 | Bridge Pattern
 
-Name: YOUR_NAME
-Group: YOUR_GROUP
+Name: Assylzhan Amangeldi
+Group: SE-2526
 Topic: A - Drawing
 
 Repository:
